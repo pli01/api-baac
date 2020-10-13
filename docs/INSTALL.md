@@ -58,3 +58,10 @@ or
 ```bash
 docker-compose up
 ```
+
+* To show all logs (or services logs)
+```bash
+docker-compose -f docker-compose.dev.yml logs -f 
+# or
+docker-compose -f docker-compose.dev.yml logs -f  api
+```
