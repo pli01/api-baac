@@ -10,6 +10,7 @@ backend/build
 #backend/extensions
 backend/favicon.ico
 backend/node_modules
+backend/.cache
 # backend/package.json
 # backend/public
 backend/yarn.lock
