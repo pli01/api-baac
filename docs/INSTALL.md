@@ -3,17 +3,17 @@
 ## Steps
 * requirements: docker, docker-compose
 * reference: installation doc strapi
-* bootstrap: explain how to generate code from scratch -(only once)
-* data:
-  * url public data
-  * seed scripts (import)
-
+* (only once) bootstrap: explain how to generate code from scratch
+* configure via web ui
 * backend: code for api baac
   * backend: `strapi`
   * backend/api: code definition for api baac
   * backend/config: configuration files
   * database type: `mongo`
   * database name: `baac`
+* data:
+  * url public data
+  * seed scripts (import)
 
 ## Reference/requirements
 - [Strapi installation docs. Installing using Docker](https://strapi.io/documentation/v3.x/installation/docker.html)
@@ -52,6 +52,8 @@ docker-compose -f docker-compose.dev.yml up
 * To run app container in production mode
 
 ```bash
+# (optionnal) set env proxy and npm registry before
+make build
 make down up
 ```
 or
@@ -65,3 +67,13 @@ docker-compose -f docker-compose.dev.yml logs -f
 # or
 docker-compose -f docker-compose.dev.yml logs -f  api
 ```
+
+## Manualy configure via WebUI
+After service up, point your browser at the ip of your host
+
+- http://192.168.88.888:80/admin)
+
+### First Content Type
+
+As usual, create admin user, then create an `caracteristiques` content type, for example.
+
