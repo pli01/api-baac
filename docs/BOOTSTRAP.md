@@ -1,4 +1,4 @@
-# Bootstrap api baac
+# Bootstrap api baac (to generate from scratch)
 
 * run command to generate all files for the api in backend directory (use the docker-compose.boostrap.yml)
 
@@ -47,3 +47,9 @@ You can start by doing:
 ```bash
 DATABASE_URI=mongodb://strapi:password@api_mongo:27017
 ```
+
+* add strapi plugin:  documentation or graphql
+```
+docker-compose -f docker-compose.dev.yml run --rm --entrypoint /bin/bash api -c "strapi install documentation graphql"
+```
+

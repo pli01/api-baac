@@ -68,6 +68,45 @@ docker-compose -f docker-compose.dev.yml logs -f
 docker-compose -f docker-compose.dev.yml logs -f  api
 ```
 
+* To show strapi help
+```bash
+docker-compose -f docker-compose.dev.yml run --rm --entrypoint /bin/bash api -c "strapi --help"
+```
+```
+Usage: strapi [options] [command]
+
+Options:
+  -v, --version                                   output the version number
+  -h, --help                                      output usage information
+
+Commands:
+  version                                         output your version of Strapi
+  console                                         open the Strapi framework console
+  new [options] <directory>                       create a new application
+  start                                           Start your Strapi application
+  develop|dev [options]                           Start your Strapi application in development mode
+  generate:api [options] <id> [attributes...]     generate a basic API
+  generate:controller [options] <id>              generate a controller for an API
+  generate:model [options] <id> [attributes...]   generate a model for an API
+  generate:policy [options] <id>                  generate a policy for an API
+  generate:service [options] <id>                 generate a service for an API
+  generate:plugin [options] <id>                  generate a basic plugin
+  build [options]                                 Builds the strapi admin app
+  install [plugins...]                            install a Strapi plugin
+  uninstall [options] [plugins...]                uninstall a Strapi plugin
+  watch-admin [options]                           Starts the admin dev server
+  configuration:dump|config:dump [options]
+  configuration:restore|config:restore [options]
+  help                                            output the help
+  *
+
+```
+
+
+## Add plugins
+* documentation
+* graphql
+
 ## Manualy configure via WebUI
 After service up, point your browser at the ip of your host
 
@@ -77,3 +116,4 @@ After service up, point your browser at the ip of your host
 
 As usual, create admin user, then create an `caracteristiques` content type, for example.
 
+### 
