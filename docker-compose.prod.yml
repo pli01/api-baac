@@ -5,7 +5,7 @@ services:
     image: api-baac:latest
     container_name: api_baac
     build:
-      context: ./backend
+      context: ./
       dockerfile: Dockerfile
       args:
         http_proxy: ${http_proxy}
