@@ -1,0 +1,46 @@
+version: "3.5"
+
+services:
+  api:
+    image: strapi/strapi:latest
+    container_name: api_baac
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_URI: ${DATABASE_URI}
+      http_proxy: ${http_proxy}
+      https_proxy: ${https_proxy}
+      no_proxy: ${no_proxy}
+    depends_on:
+      - db
+    networks:
+      - api-baac-network
+    ports:
+      - "${WEB_PORT:-80}:1337"
+    volumes:
+      - ./backend:/srv/app/
+    command: 'npm run develop'
+
+  db:
+    image: mongo
+    container_name: api_mongo
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    networks:
+      - api-baac-network
+    volumes:
+      - apidatadb:/data/db
+    ports:
+      - "27017:27017"
+
+networks:
+  api-baac-network:
+    driver: bridge
+
+volumes:
+  apidatadb:
