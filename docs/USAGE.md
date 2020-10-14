@@ -5,8 +5,12 @@ See [strapi doc](https://strapi.io/documentation/v3.x/content-api/parameters.htm
 ```
 curl -s "http://api-bacc.herokuapp.com/caracteristiques?dep=750"
 curl -s "http://api-bacc.herokuapp.com/caracteristiques?dep_eq=750"
-curl -s "http://api-bacc.herokuapp.com/caracteristiques?dep_eq=750"
 curl -s "http://api-bacc.herokuapp.com/caracteristiques?where\[dep_eq\]=750"
+```
+
+* Filter per dep and per com
+```
+curl -s "http://api-bacc.herokuapp.com/caracteristiques?dep=750&com=101"
 ```
 
 * Sort caracteristique by dep
