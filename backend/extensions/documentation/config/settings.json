@@ -1,4 +1,20 @@
 {
+  "info": {
+    "version": "1.0.0",
+    "title": "DOCUMENTATION",
+    "description": "API Base des Accidents Corporels de la Circulation",
+    "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
+    "contact": {
+      "name": "pli01",
+      "email": "contact-email@something.io",
+      "url": "https://github.com/pli01/api-bacc"
+    }
+  },
+  "x-strapi-config": {
+    "path": "/documentation",
+    "showGeneratedFiles": true,
+    "pluginsForWhichToGenerateDoc": []
+  },
   "servers": [
     {
       "url": "http://localhost:1337",
@@ -14,4 +30,3 @@
     }
   ]
 }
-
