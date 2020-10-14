@@ -1,0 +1,17 @@
+{
+  "servers": [
+    {
+      "url": "http://localhost:1337",
+      "description": "Development server"
+    },
+    {
+      "url": "http://api-bacc.herokuapp.com",
+      "description": "Staging server"
+    },
+    {
+      "url": "YOUR_PRODUCTION_SERVER",
+      "description": "Production server"
+    }
+  ]
+}
+
