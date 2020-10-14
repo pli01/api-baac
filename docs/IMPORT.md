@@ -7,7 +7,8 @@
 ```
 * convert csv to json
 ```
-docker-compose  -f docker-compose.import.yml run --rm --entrypoint /bin/bash api-import -c "( cd /data ; node convert-csv-to-json.js ) "
+docker-compose -f docker-compose.import.yml up --force-recreate
+docker-compose -f docker-compose.import.yml down
 ```
 * import json to api via http POST
 ```
