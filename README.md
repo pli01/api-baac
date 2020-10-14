@@ -9,6 +9,7 @@
 * L'API est développée sous licence libre, le code et les évolutions sont disponibles publiquement (https://github.com/pli01/api-bacc)
 
 # Documentation
+* [Data Format](./docs/DATA.md)
 * [Install Steps](./docs/INSTALL.md)
 * [Deploy Steps](./docs/DEPLOY.md)
 * [Import Steps](./docs/IMPORT.md)
