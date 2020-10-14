@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "caracteristiques",
+  "info": {
+    "name": "caracteristique",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Num_Acc": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "lum": {
+      "type": "integer"
+    },
+    "agg": {
+      "type": "integer"
+    },
+    "int": {
+      "type": "integer"
+    },
+    "atm": {
+      "type": "integer"
+    },
+    "col": {
+      "type": "integer"
+    },
+    "com": {
+      "type": "integer"
+    },
+    "adr": {
+      "type": "string"
+    },
+    "gps": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "biginteger"
+    },
+    "long": {
+      "type": "biginteger"
+    },
+    "dep": {
+      "type": "integer"
+    },
+    "an": {
+      "type": "integer"
+    },
+    "mois": {
+      "type": "integer"
+    },
+    "jour": {
+      "type": "integer"
+    },
+    "hrmn": {
+      "type": "integer"
+    }
+  }
+}
