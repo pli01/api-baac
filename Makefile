@@ -31,3 +31,18 @@ test-up-db: ## test db container up and running
 test-up-api: ## test api container up and running
 	time bash -x tests/test-up-api.sh
 
+
+# import
+import: clean-data get-data convert-data import-data
+
+clean-data:
+	rm -rf data/*.csv data/*.json || true
+
+get-data:
+	( cd data ; bash ../scripts/get-datasets.sh )
+
+convert-data:
+	${DC}  -f ${DC_IMPORT} run --rm --entrypoint /bin/bash api-import -c "( cd /data ; node convert-csv-to-json.js ) "
+
+import-data:
+	( cd data ; bash ../scripts/import-datasets.sh )

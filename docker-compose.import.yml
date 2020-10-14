@@ -15,4 +15,3 @@ services:
     volumes:
       - ./data:/data
     command: '( cd /data ; node convert-csv-to-json.js ) '
-
