@@ -1,0 +1,18 @@
+version: "3.5"
+
+services:
+  api-import:
+    image: node:12
+    container_name: api_import
+    env_file: .env
+    environment:
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_URI: ${DATABASE_URI}
+      http_proxy: ${http_proxy}
+      https_proxy: ${https_proxy}
+      no_proxy: ${no_proxy}
+    volumes:
+      - ./data:/data
+    command: '( cd /data ; node convert-csv-to-json.js ) '
+
