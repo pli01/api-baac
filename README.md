@@ -6,7 +6,7 @@
 
 * Ce projet est réalisée à partir de [strapi.io](https://strapi.io) et de [mongodb](https://www.mongodb.com)
 
-* L'API est développée sous licence libre, le code et les évolutions sont disponible publiquement (https://github.com/pli01/api-bacc)
+* L'API est développée sous licence libre, le code et les évolutions sont disponibles publiquement (https://github.com/pli01/api-bacc)
 
 # Documentation
 * [Bootstrap Steps (to generate this project)](./docs/BOOTSTRAP.md)
