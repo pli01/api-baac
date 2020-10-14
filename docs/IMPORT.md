@@ -5,7 +5,7 @@
 ```
 ( cd data ; bash ../scripts/get-datasets.sh )
 ```
-* convert csv to json
+* convert csv (latin1) to json
 ```
 docker-compose -f docker-compose.import.yml up --force-recreate
 docker-compose -f docker-compose.import.yml down
