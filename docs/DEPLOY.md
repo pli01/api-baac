@@ -22,9 +22,9 @@ make down
   * get MONGO_URI, in the form of `DATABASE_URI=mongodb+srv://<username>:<password>@cluster0.XXXX.mongodb.net`
 
 * On heroku:
-  * create api-baac app
+  * create api-bacc app
   * Deployment method: github connect this repo
   * Set Stack container type
 ```
-heroku -a api-baac stack:set container
+heroku -a api-bacc stack:set container
 ```

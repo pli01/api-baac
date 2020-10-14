@@ -1,9 +1,9 @@
-# Bootstrap api baac (to generate from scratch)
+# Bootstrap api bacc (to generate from scratch)
 
 * run command to generate all files for the api in backend directory (use the docker-compose.boostrap.yml)
 
 ```bash
-docker-compose -f docker-compose.boostrap.yml  run --rm --entrypoint /bin/bash api -c "npx create-strapi-app backend --quickstart --no-run --use-npm --dbclient mongo --dbhost mongoapi --dbport 27017 --dbname baac --dbusername strapi --dbpassword password"
+docker-compose -f docker-compose.boostrap.yml  run --rm --entrypoint /bin/bash api -c "npx create-strapi-app backend --quickstart --no-run --use-npm --dbclient mongo --dbhost mongoapi --dbport 27017 --dbname bacc --dbusername strapi --dbpassword password"
 ```
 
 ```

@@ -6,7 +6,7 @@ module.exports = ({ env }) => ({
       settings: {
         client: env('DATABASE_CLIENT', 'mongo'),
         uri: env('DATABASE_URI', ''),
-        database: env('DATABASE_NAME', 'baac'),
+        database: env('DATABASE_NAME', 'bacc'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
