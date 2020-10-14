@@ -6,7 +6,7 @@
     "description": "API Base des Accidents Corporels de la Circulation",
     "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
     "contact": {
-      "name": "https://github.com/pli01",
+      "name": "pli01",
       "email": "contact-email@something.io",
       "url": "https://github.com/pli01/api-bacc"
     },
@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/14/2020 9:09:30 PM"
+    "x-generation-date": "10/14/2020 9:36:19 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
