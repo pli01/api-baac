@@ -21,7 +21,7 @@ services:
       - "${WEB_PORT:-80}:1337"
     volumes:
       - ./backend:/srv/app/
-    command: 'npm run develop'
+    # command: 'npm run develop'
 
   db:
     image: mongo
