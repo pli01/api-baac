@@ -1,15 +1,16 @@
 # Deploy
 
 ## On docker host
-* build image
+* Generate your conf or copy .env.example .env
+* Build image
 ```
 make build
 ```
-* start stack
+* Start stack (api and db)
 ```
 make up
 ```
-* stop stack
+* Stop stack
 ```
 make down
 ```
@@ -19,11 +20,11 @@ make down
   * create project/cluster
   * add whitelist
   * create admin account (strapi, auto password)
-  * get MONGO_URI, in the form of `DATABASE_URI=mongodb+srv://<username>:<password>@cluster0.XXXX.mongodb.net`
+  * get connections url, in the form of `DATABASE_URI=mongodb+srv://<username>:<password>@cluster0.XXXX.mongodb.net`
 
 * On heroku:
   * create api-bacc app
-  * Deployment method: github connect this repo
+  * Choose Deployment method: github connect this repo
   * Set Stack container type
 ```
 heroku -a api-bacc stack:set container

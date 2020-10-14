@@ -20,3 +20,14 @@ up: check-dc-config-prod
 	${DC} -f ${DC_PROD} up ${DC_RUN_ARGS}
 down: check-dc-config-prod
 	${DC} -f ${DC_PROD} down
+
+test: wait-db test-up-db test-up-api
+
+wait-db: ## wait db container up and running
+	time bash -x tests/wait-db.sh
+test-up-db: ## test db container up and running
+	time bash -x tests/test-up-db.sh
+
+test-up-api: ## test api container up and running
+	time bash -x tests/test-up-api.sh
+
