@@ -10,4 +10,6 @@ if [ "$ret" -gt 0 ] ; then
 fi
 docker images
 
+echo "# run stack"
+cp .env.example .env
 time make down up
