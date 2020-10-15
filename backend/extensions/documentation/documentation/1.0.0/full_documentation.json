@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/14/2020 9:36:19 PM"
+    "x-generation-date": "10/15/2020 1:27:33 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -587,23 +587,11 @@
           "col": {
             "type": "integer"
           },
-          "com": {
-            "type": "integer"
-          },
           "adr": {
             "type": "string"
           },
           "gps": {
             "type": "string"
-          },
-          "lat": {
-            "type": "integer"
-          },
-          "long": {
-            "type": "integer"
-          },
-          "dep": {
-            "type": "integer"
           },
           "an": {
             "type": "integer"
@@ -614,8 +602,20 @@
           "jour": {
             "type": "integer"
           },
+          "dep": {
+            "type": "string"
+          },
+          "com": {
+            "type": "string"
+          },
+          "lat": {
+            "type": "string"
+          },
+          "lon": {
+            "type": "string"
+          },
           "hrmn": {
-            "type": "integer"
+            "type": "string"
           },
           "published_at": {
             "type": "datetime"
@@ -645,23 +645,11 @@
           "col": {
             "type": "integer"
           },
-          "com": {
-            "type": "integer"
-          },
           "adr": {
             "type": "string"
           },
           "gps": {
             "type": "string"
-          },
-          "lat": {
-            "type": "integer"
-          },
-          "long": {
-            "type": "integer"
-          },
-          "dep": {
-            "type": "integer"
           },
           "an": {
             "type": "integer"
@@ -672,8 +660,20 @@
           "jour": {
             "type": "integer"
           },
+          "dep": {
+            "type": "string"
+          },
+          "com": {
+            "type": "string"
+          },
+          "lat": {
+            "type": "string"
+          },
+          "lon": {
+            "type": "string"
+          },
           "hrmn": {
-            "type": "integer"
+            "type": "string"
           },
           "published_at": {
             "type": "datetime"

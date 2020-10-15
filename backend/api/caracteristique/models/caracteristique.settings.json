@@ -31,23 +31,11 @@
     "col": {
       "type": "integer"
     },
-    "com": {
-      "type": "integer"
-    },
     "adr": {
       "type": "string"
     },
     "gps": {
       "type": "string"
-    },
-    "lat": {
-      "type": "biginteger"
-    },
-    "long": {
-      "type": "biginteger"
-    },
-    "dep": {
-      "type": "integer"
     },
     "an": {
       "type": "integer"
@@ -58,8 +46,20 @@
     "jour": {
       "type": "integer"
     },
+    "dep": {
+      "type": "string"
+    },
+    "com": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "lon": {
+      "type": "string"
+    },
     "hrmn": {
-      "type": "integer"
+      "type": "string"
     }
   }
 }
