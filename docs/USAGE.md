@@ -1,23 +1,27 @@
 # Usage
-See [strapi doc](https://strapi.io/documentation/v3.x/content-api/parameters.html#filters)
 
-* Filter per dep
+* Voir le [format de données](./DATA.md)
+* Voir la documentation d utilisation de  l'API: [Documentation](https://api-bacc.herokuapp.com/documentation)
+* Voir aussi [strapi doc](https://strapi.io/documentation/v3.x/content-api/parameters.html#filters)
+
+## Exemples d utilisation
+* afficher la liste des caracteristiques des accidents d un departements (dep)
 ```
 curl -s "http://api-bacc.herokuapp.com/caracteristiques?dep=750"
 curl -s "http://api-bacc.herokuapp.com/caracteristiques?dep_eq=750"
 curl -s "http://api-bacc.herokuapp.com/caracteristiques?where\[dep_eq\]=750"
 ```
 
-* Filter per dep and per com
+* afficher la liste des caracteristiques des accidents d un departements (dep) et d'une commune (com)
 ```
 curl -s "http://api-bacc.herokuapp.com/caracteristiques?dep=750&com=101"
 ```
 
-* Sort caracteristique by dep
+* Trier la liste des caracteristiques des accidents par departement
 ```
 curl -s  "http://api-bacc.herokuapp.com/caracteristiques?_sort=dep:ASC" 
 ```
-* Limit result length
+* Limiter la liste des caracteristiques des accidents
 ```
 curl -s  "http://api-bacc.herokuapp.com/caracteristiques?_limit=10" 
 ```
