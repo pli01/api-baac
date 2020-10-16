@@ -12,24 +12,24 @@
   },
   "attributes": {
     "Num_Acc": {
-      "type": "biginteger",
+      "type": "string",
       "required": true,
       "unique": true
     },
     "lum": {
-      "type": "integer"
+      "type": "string"
     },
     "agg": {
-      "type": "integer"
+      "type": "string"
     },
     "int": {
-      "type": "integer"
+      "type": "string"
     },
     "atm": {
-      "type": "integer"
+      "type": "string"
     },
     "col": {
-      "type": "integer"
+      "type": "string"
     },
     "adr": {
       "type": "string"
@@ -38,13 +38,13 @@
       "type": "string"
     },
     "an": {
-      "type": "integer"
+      "type": "string"
     },
     "mois": {
-      "type": "integer"
+      "type": "string"
     },
     "jour": {
-      "type": "integer"
+      "type": "string"
     },
     "dep": {
       "type": "string"
