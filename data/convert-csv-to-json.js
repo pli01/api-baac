@@ -8,3 +8,4 @@ createReadStream('./caracteristiques-2018.csv', 'latin1')
     .pipe(stringify)
     .pipe(createWriteStream('./caracteristiques-2018.json'));
 
+console.log("File caracteristiques-2018.json ok");

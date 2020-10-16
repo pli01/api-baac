@@ -524,22 +524,22 @@
             "type": "string"
           },
           "Num_Acc": {
-            "type": "integer"
+            "type": "string"
           },
           "lum": {
-            "type": "integer"
+            "type": "string"
           },
           "agg": {
-            "type": "integer"
+            "type": "string"
           },
           "int": {
-            "type": "integer"
+            "type": "string"
           },
           "atm": {
-            "type": "integer"
+            "type": "string"
           },
           "col": {
-            "type": "integer"
+            "type": "string"
           },
           "adr": {
             "type": "string"
@@ -548,13 +548,13 @@
             "type": "string"
           },
           "an": {
-            "type": "integer"
+            "type": "string"
           },
           "mois": {
-            "type": "integer"
+            "type": "string"
           },
           "jour": {
-            "type": "integer"
+            "type": "string"
           },
           "dep": {
             "type": "string"
@@ -582,22 +582,22 @@
         ],
         "properties": {
           "Num_Acc": {
-            "type": "integer"
+            "type": "string"
           },
           "lum": {
-            "type": "integer"
+            "type": "string"
           },
           "agg": {
-            "type": "integer"
+            "type": "string"
           },
           "int": {
-            "type": "integer"
+            "type": "string"
           },
           "atm": {
-            "type": "integer"
+            "type": "string"
           },
           "col": {
-            "type": "integer"
+            "type": "string"
           },
           "adr": {
             "type": "string"
@@ -606,13 +606,13 @@
             "type": "string"
           },
           "an": {
-            "type": "integer"
+            "type": "string"
           },
           "mois": {
-            "type": "integer"
+            "type": "string"
           },
           "jour": {
-            "type": "integer"
+            "type": "string"
           },
           "dep": {
             "type": "string"

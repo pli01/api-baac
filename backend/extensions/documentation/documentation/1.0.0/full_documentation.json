@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/15/2020 1:27:33 PM"
+    "x-generation-date": "10/16/2020 9:18:51 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -570,22 +570,22 @@
             "type": "string"
           },
           "Num_Acc": {
-            "type": "integer"
+            "type": "string"
           },
           "lum": {
-            "type": "integer"
+            "type": "string"
           },
           "agg": {
-            "type": "integer"
+            "type": "string"
           },
           "int": {
-            "type": "integer"
+            "type": "string"
           },
           "atm": {
-            "type": "integer"
+            "type": "string"
           },
           "col": {
-            "type": "integer"
+            "type": "string"
           },
           "adr": {
             "type": "string"
@@ -594,13 +594,13 @@
             "type": "string"
           },
           "an": {
-            "type": "integer"
+            "type": "string"
           },
           "mois": {
-            "type": "integer"
+            "type": "string"
           },
           "jour": {
-            "type": "integer"
+            "type": "string"
           },
           "dep": {
             "type": "string"
@@ -628,22 +628,22 @@
         ],
         "properties": {
           "Num_Acc": {
-            "type": "integer"
+            "type": "string"
           },
           "lum": {
-            "type": "integer"
+            "type": "string"
           },
           "agg": {
-            "type": "integer"
+            "type": "string"
           },
           "int": {
-            "type": "integer"
+            "type": "string"
           },
           "atm": {
-            "type": "integer"
+            "type": "string"
           },
           "col": {
-            "type": "integer"
+            "type": "string"
           },
           "adr": {
             "type": "string"
@@ -652,13 +652,13 @@
             "type": "string"
           },
           "an": {
-            "type": "integer"
+            "type": "string"
           },
           "mois": {
-            "type": "integer"
+            "type": "string"
           },
           "jour": {
-            "type": "integer"
+            "type": "string"
           },
           "dep": {
             "type": "string"
