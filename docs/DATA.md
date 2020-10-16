@@ -2,6 +2,8 @@
 
 * source: (https://www.data.gouv.fr/fr/datasets/base-de-donnees-accidents-corporels-de-la-circulation/)
 * description des champs (https://static.data.gouv.fr/resources/base-de-donnees-accidents-corporels-de-la-circulation/20191014-112328/description-des-bases-de-donnees-onisr-annees-2005-a-2018.pdf)
+* Fichiers Caractéristiques – Lieux – Véhicules – Usagers
+
 ```
 # extrait de la rubrique CARACTERISTIQUES
 Num_Acc

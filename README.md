@@ -1,12 +1,13 @@
-# api-bacc - API Base des Accidents Corporels de la Circulation
+# api-bacc - API de la Base de données des Accidents Corporels de la Circulation
 
 Cette API représente les données publiques de la Base des Accidents Corporels de la Circulation.
-Ces données sont publiées par le Ministère de l'Interieur sur [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/base-de-donnees-accidents-corporels-de-la-circulation)
+
+Ces données sont issue du bulletin d’analyse des accidents corporels (dit `fichier BAAC`) qui sont publiées par le Ministère de l'Interieur sur [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/base-de-donnees-accidents-corporels-de-la-circulation)
 
 * Documentation de l'API: [API Documentation](https://api-bacc.herokuapp.com/documentation)
 * Consultation: [API bacc](https://api-bacc.herokuapp.com/)
 
-Ce projet s appuie sur:
+Ce projet repose sur:
 * un service api en node.js réalisé à partir du framework [strapi](https://strapi.io) 
 * un service de backend de données [mongodb](https://www.mongodb.com)
 
