@@ -14,4 +14,4 @@ services:
       no_proxy: ${no_proxy}
     volumes:
       - ./data:/data
-    command: '/bin/bash -c "( cd /data ; npm ci ; node convert-csv-to-json.js )"'
+    command: '/bin/bash -c "( cd /data ; npm ci ; npm run convert )"'

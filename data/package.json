@@ -4,6 +4,7 @@
   "description": "",
   "main": "convert-csv-to-json.js",
   "scripts": {
+    "convert": "node convert-csv-to-json.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
