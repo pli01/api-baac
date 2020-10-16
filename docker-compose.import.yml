@@ -1,9 +1,9 @@
 version: "3.5"
 
 services:
-  api-import:
+  api-convert:
     image: node:12
-    container_name: api_import
+    container_name: api_convert
     env_file: .env
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
@@ -12,6 +12,8 @@ services:
       http_proxy: ${http_proxy}
       https_proxy: ${https_proxy}
       no_proxy: ${no_proxy}
+      INPUT_FILE: ${INPUT_FILE}
+      OUTPUT_FILE: ${OUTPUT_FILE}
     volumes:
       - ./data:/data
     command: '/bin/bash -c "( cd /data ; npm ci ; npm run convert )"'

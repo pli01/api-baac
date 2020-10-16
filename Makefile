@@ -33,16 +33,23 @@ test-up-api: ## test api container up and running
 
 
 # import
-import: clean-data get-data convert-data import-data
+import: clean-data get-data convert-data import-data-via-api
 
 clean-data:
-	rm -rf data/*.csv data/*.json || true
+	rm -rf data/caracteristique*.csv data/caracteristique*.json || true
 
 get-data:
 	( cd data ; bash ../scripts/get-datasets.sh )
 
 convert-data:
-	${DC}  -f ${DC_IMPORT} run --rm --entrypoint /bin/bash api-import -c "( cd /data ; node convert-csv-to-json.js ) "
+	${DC} -f ${DC_IMPORT} up
+	${DC} -f ${DC_IMPORT} down
 
-import-data:
+convert-data-to-mongoimport:
+	( cd data ; bash ../scripts/convert-data-to-mongoimport.sh )
+
+import-data-via-mongoimport:
+	bash scripts/mongoimport-json.sh
+
+import-data-via-api:
 	( cd data ; bash ../scripts/import-datasets.sh )

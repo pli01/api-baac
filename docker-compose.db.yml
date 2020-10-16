@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+  db-import:
+    image: mongo
+    container_name: api_mongo_import
+    env_file: .env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    networks:
+      - api-bacc-network
+    volumes:
+      - ./data:/import
+    ports:
+      - "27017:27017"
+    command: ' mongoimport --db strapi --collection caracteristiques   "$DATABASE_URI/strapi?authSource=admin" /tmp/out'
+
+networks:
+  api-bacc-network:
+    driver: bridge
