@@ -2,7 +2,7 @@
   "name": "backend",
   "private": true,
   "version": "0.1.0",
-  "description": "api bacc",
+  "description": "api baac",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",

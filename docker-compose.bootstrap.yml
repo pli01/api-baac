@@ -3,7 +3,7 @@ version: "3.5"
 services:
   api:
     image: strapi/strapi:${STRAPI_VERSION:-latest}
-    container_name: api_bacc
+    container_name: api_baac
     restart: unless-stopped
     env_file: .env
     environment:
@@ -16,7 +16,7 @@ services:
     depends_on:
       - db
     networks:
-      - api-bacc-network
+      - api-baac-network
     ports:
       - "${WEB_PORT:-80}:1337"
     volumes:
@@ -31,14 +31,14 @@ services:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
     networks:
-      - api-bacc-network
+      - api-baac-network
     volumes:
       - apidatadb:/data/db
     ports:
       - "27017:27017"
 
 networks:
-  api-bacc-network:
+  api-baac-network:
     driver: bridge
 
 volumes:

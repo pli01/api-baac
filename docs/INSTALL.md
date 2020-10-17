@@ -5,12 +5,12 @@
 * reference: installation doc strapi
 * (only once) bootstrap: explain how to generate code from scratch
 * configure via web ui '/admin'
-* backend directory: code for api bacc
+* backend directory: code for api baac
   * backend: `strapi`
-  * backend/api: code definition for api bacc
+  * backend/api: code definition for api baac
   * backend/config: configuration files
   * database type: `mongo`
-  * database name: `bacc`
+  * database name: `baac`
 * data dir:
 * scripts:
   * url public data

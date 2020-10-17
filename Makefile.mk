@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-APP := api-bacc
+APP := api-baac
 STRAPI_VERSION=3.2.4
 STRAPI_BASE_VERSION=12
 
