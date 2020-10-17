@@ -8,7 +8,7 @@
     "contact": {
       "name": "pli01",
       "email": "contact-email@something.io",
-      "url": "https://github.com/pli01/api-bacc"
+      "url": "https://github.com/pli01/api-baac"
     },
     "license": {
       "name": "Apache 2.0",
@@ -28,7 +28,7 @@
       "description": "Development server"
     },
     {
-      "url": "http://api-bacc.herokuapp.com",
+      "url": "http://api-baac.herokuapp.com",
       "description": "Staging server"
     },
     {

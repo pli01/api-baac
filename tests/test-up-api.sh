@@ -8,7 +8,7 @@ basename=$(basename $0)
 echo "# $basename ${APP} ${APP_VERSION}"
 
 ret=0
-APP=api-bacc
+APP=api-baac
 url=localhost
 
 echo "# Test ${APP} up"

@@ -9,7 +9,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
     networks:
-      - api-bacc-network
+      - api-baac-network
     volumes:
       - ./data:/import
     ports:
@@ -17,5 +17,5 @@ services:
     command: ' mongoimport --db strapi --collection caracteristiques   "$DATABASE_URI/strapi?authSource=admin" /tmp/out'
 
 networks:
-  api-bacc-network:
+  api-baac-network:
     driver: bridge

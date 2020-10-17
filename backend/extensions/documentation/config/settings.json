@@ -7,7 +7,7 @@
     "contact": {
       "name": "pli01",
       "email": "contact-email@something.io",
-      "url": "https://github.com/pli01/api-bacc"
+      "url": "https://github.com/pli01/api-baac"
     }
   },
   "x-strapi-config": {
@@ -21,7 +21,7 @@
       "description": "Development server"
     },
     {
-      "url": "http://api-bacc.herokuapp.com",
+      "url": "http://api-baac.herokuapp.com",
       "description": "Staging server"
     },
     {
