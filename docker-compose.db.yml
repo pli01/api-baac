@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   db-import:
-    image: mongo
+    image: mongo:4
     container_name: api_mongo_import
     env_file: .env
     environment:
