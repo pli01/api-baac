@@ -4,14 +4,15 @@
 * requirements: docker, docker-compose
 * reference: installation doc strapi
 * (only once) bootstrap: explain how to generate code from scratch
-* configure via web ui
-* backend: code for api bacc
+* configure via web ui '/admin'
+* backend directory: code for api bacc
   * backend: `strapi`
   * backend/api: code definition for api bacc
   * backend/config: configuration files
   * database type: `mongo`
   * database name: `bacc`
-* data:
+* data dir:
+* scripts:
   * url public data
   * seed scripts (import)
 
@@ -25,10 +26,38 @@
     - docker-compose.dev.yml: to run backend and db. Allow to edit dynamically code files
     - docker-compose.prod.yml: to run backend and db in production mode (build image,run container)
     - Dockerfile: used in production mode to build api backend container based on strapi and code files
+    - docker-compose.import.yml: to convert and import data on api or db instances
   - .env config files : see [`.env.example`](.env.example)
   - Makefile to build/up/down api stack
 
 ## Usefull Commands
+
+* To run app container in `developement` mode and edit dynamically code file
+```bash
+# set .env file
+# (optionnal) set env proxy and npm registry before
+make down-dev up-dev
+make up-dev
+```
+or
+```bash
+docker-compose -f docker-compose.dev.yml up
+```
+
+* To run app container in `production` mode
+
+```bash
+# set .env file
+# (optionnal) set env proxy and npm registry before
+make build
+make down up
+make test
+make down
+```
+or
+```bash
+docker-compose -f docker-compose.prod.yml up
+```
 
 * To fix npm `package*.json`
 ```bash
@@ -38,27 +67,6 @@ docker-compose -f docker-compose.dev.yml run --rm --entrypoint /bin/bash api -c 
 * To run `npm audit`
 ```bash
 docker-compose -f docker-compose.dev.yml run --rm --entrypoint /bin/bash api -c "npm audit"
-```
-
-* To run app container in developement mode and edit dynamically code file
-```bash
-make down-dev up-dev
-```
-or
-```bash
-docker-compose -f docker-compose.dev.yml up
-```
-
-* To run app container in production mode
-
-```bash
-# (optionnal) set env proxy and npm registry before
-make build
-make down up
-```
-or
-```bash
-docker-compose up
 ```
 
 * To show all logs (or services logs)

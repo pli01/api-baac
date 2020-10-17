@@ -1,6 +1,11 @@
 # Import data
 
-## Dirty Steps
+## Usefull commands
+* Following commands will do get data from data.gouv, convert csv to json, and import via rest api or mongoimport
+````bash
+make import
+```
+## Dirty details Steps
 * get data from ref site
 ```
 ( cd data ; bash ../scripts/get-datasets.sh )
