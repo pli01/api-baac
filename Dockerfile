@@ -1,4 +1,5 @@
-FROM strapi/base
+ARG STRAPI_BASE_VERSION=latest
+FROM strapi/base:${STRAPI_BASE_VERSION}
 ARG http_proxy
 ARG https_proxy
 ARG no_proxy

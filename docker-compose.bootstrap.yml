@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   api:
-    image: strapi/strapi:latest
+    image: strapi/strapi:${STRAPI_VERSION:-latest}
     container_name: api_bacc
     restart: unless-stopped
     env_file: .env
@@ -23,7 +23,7 @@ services:
       - ./backend:/srv/app/backend
 
   db:
-    image: mongo
+    image: mongo:4
     container_name: api_mongo
     restart: unless-stopped
     env_file: .env

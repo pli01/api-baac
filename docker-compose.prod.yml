@@ -8,6 +8,7 @@ services:
       context: ./
       dockerfile: Dockerfile
       args:
+        STRAPI_BASE_VERSION: ${STRAPI_BASE_VERSION}
         http_proxy: ${http_proxy}
         https_proxy: ${http_proxy}
         no_proxy: ${no_proxy}
@@ -32,7 +33,7 @@ services:
     # command: 'strapi start'
 
   db:
-    image: mongo
+    image: mongo:4
     container_name: api_mongo
     restart: unless-stopped
     env_file: .env
