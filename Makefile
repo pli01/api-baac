@@ -4,6 +4,14 @@
 include Makefile.mk
 export
 
+# import ".env" config
+# override default config with `make cnf="config_special.env" build up`
+
+cnf ?= .env
+dummy_cnf := $(shell touch $(cnf) )
+include $(cnf)
+export $(shell sed 's/=.*//' $(cnf))
+
 check-dc-config-dev:
 	${DC} -f $(DC_DEV) config -q
 
