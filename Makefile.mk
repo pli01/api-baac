@@ -1,6 +1,7 @@
 SHELL := /bin/bash
 APP=api-bacc
-STRAPI_VERSION=3.2.3
+STRAPI_VERSION=3.2.4
+STRAPI_BASE_VERSION=12
 
 DC      = docker-compose
 DC_DEV  = docker-compose.dev.yml
