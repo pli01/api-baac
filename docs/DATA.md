@@ -70,3 +70,15 @@ Coordonnées géographiques en degrés décimaux : lat : Latitude
 long : Longitude
 ```
 
+# Fichier usagers
+```
+# extrait de la rubrique USAGERS
+```
+# Fichier lieux
+```
+# extrait de la rubrique LIEUX
+```
+# Fichier véhicules
+```
+# extrait de la rubrique VEHICULES
+```
