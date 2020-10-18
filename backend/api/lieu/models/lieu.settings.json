@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lieux",
+  "info": {
+    "name": "lieu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Num_Acc": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "catr": {
+      "type": "string"
+    },
+    "voie": {
+      "type": "string"
+    },
+    "v1": {
+      "type": "string"
+    },
+    "v2": {
+      "type": "string"
+    },
+    "circ": {
+      "type": "string"
+    },
+    "nbv": {
+      "type": "string"
+    },
+    "pr": {
+      "type": "string"
+    },
+    "pr1": {
+      "type": "string"
+    },
+    "vosp": {
+      "type": "string"
+    },
+    "prof": {
+      "type": "string"
+    },
+    "plan": {
+      "type": "string"
+    },
+    "lartpc": {
+      "type": "string"
+    },
+    "larrout": {
+      "type": "string"
+    },
+    "surf": {
+      "type": "string"
+    },
+    "infra": {
+      "type": "string"
+    },
+    "situ": {
+      "type": "string"
+    },
+    "env1": {
+      "type": "string"
+    }
+  }
+}
