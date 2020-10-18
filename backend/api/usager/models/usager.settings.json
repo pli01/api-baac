@@ -1,0 +1,44 @@
+{
+  "collectionName": "usagers",
+  "info": {
+    "name": "usager",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Num_Acc": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "senc": {
+      "type": "string"
+    },
+    "catv": {
+      "type": "string"
+    },
+    "occutc": {
+      "type": "string"
+    },
+    "obs": {
+      "type": "string"
+    },
+    "obsm": {
+      "type": "string"
+    },
+    "choc": {
+      "type": "string"
+    },
+    "manv": {
+      "type": "string"
+    },
+    "num_veh": {
+      "type": "string"
+    }
+  }
+}
