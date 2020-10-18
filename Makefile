@@ -46,7 +46,7 @@ import: clean-data get-data convert-data import-data-via-api
 clean-data: ${DATA_SETS}
 
 ${DATA_SETS}:
-	rm -rf $@.csv $@.json $@.json.import || true
+	rm -rf ${DATA_PATH}/$@.csv ${DATA_PATH}/$@.json ${DATA_PATH}/$@.json.import || true
 
 get-data:
 	( cd data ; bash ../scripts/get-datasets.sh )
