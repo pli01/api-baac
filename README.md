@@ -1,6 +1,8 @@
 # api-baac - API du bulletin d’analyse des accidents corporels
 
-Cette API représente les données publiques issue du bulletin d’analyse des accidents corporels (dit `fichier BAAC`) publiées par le Ministère de l'Interieur sur la page [Base des Accidents Corporels de la Circulation sur data.gouv.fr](https://www.data.gouv.fr/fr/datasets/base-de-donnees-accidents-corporels-de-la-circulation)
+Cette API représente les données publiques issue du Bulletin d’Analyse des Accidents Corporels (dit `fichier BAAC`).
+
+Ces données sont publiées par le Ministère de l'Interieur sur la page [Base données des Accidents Corporels de la Circulation sur data.gouv.fr](https://www.data.gouv.fr/fr/datasets/base-de-donnees-accidents-corporels-de-la-circulation)
 
 * Documentation de l'API: [API Documentation](https://api-baac.herokuapp.com/documentation)
 * Consultation: [API baac](https://api-baac.herokuapp.com/)
