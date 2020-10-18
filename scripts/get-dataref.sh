@@ -8,4 +8,5 @@ dataref=https://www.data.gouv.fr/datasets/53698f4ca3a729239d2036df/rdf.json
 
 curl -s -o - $dataref | \
    jq -r '."@graph"[]|.title + " " + .downloadURL' | \
-   egrep -E '^vehicules-|^usagers-|^lieux-|^caracteristiques-' |sort
+   egrep -E '^vehicules-|^usagers-|^lieux-|^caracteristiques-' | 
+   sort

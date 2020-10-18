@@ -6,6 +6,7 @@ services:
     container_name: api_mongo_import
     env_file: .env
     environment:
+      DATA_SETS: ${DATA_SETS}
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
     networks:

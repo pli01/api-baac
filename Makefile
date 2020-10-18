@@ -43,14 +43,16 @@ test-up-api: ## test api container up and running
 # import
 import: clean-data get-data convert-data import-data-via-api
 
-clean-data:
-	rm -rf data/caracteristique*.csv data/caracteristique*.json || true
+clean-data: ${DATA_SETS}
+
+${DATA_SETS}:
+	rm -rf $@.csv $@.json $@.json.import || true
 
 get-data:
 	( cd data ; bash ../scripts/get-datasets.sh )
 
 convert-data:
-	${DC} -f ${DC_IMPORT} up
+	export DATA_SETS="${DATA_SETS}" ; ${DC} -f ${DC_IMPORT} up
 	${DC} -f ${DC_IMPORT} down
 
 convert-data-to-mongoimport:
