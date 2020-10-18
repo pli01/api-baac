@@ -5,6 +5,7 @@
 * Fichiers Caractéristiques – Lieux – Véhicules – Usagers
 
 * Reference data.gouv.fr (https://www.data.gouv.fr/datasets/53698f4ca3a729239d2036df/rdf.json)
+* student works from https://medium.com/@neveldo/les-accidents-de-la-circulation-de-2005-%C3%A0-2016-visualis%C3%A9s-avec-r-b3e2f25266d9
 
 # Fichier caracteristiques
 ```
