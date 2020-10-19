@@ -17,7 +17,6 @@ DOCKER_USE_TTY := $(shell test -t 1 && echo "-t" )
 DC_USE_TTY     := $(shell test -t 1 || echo "-T" )
 
 DATA_PATH := data
-INPUT_FILE := ./caracteristiques-2018.csv
-OUTPUT_FILE := ./caracteristiques-2018.json
+DATA_SETS = caracteristiques-2018 lieux-2018 usagers-2018 vehicules-2018
 DATABASE_URI :=
 DATABASE_NAME :=

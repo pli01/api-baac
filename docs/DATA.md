@@ -4,6 +4,10 @@
 * description des champs (https://static.data.gouv.fr/resources/base-de-donnees-accidents-corporels-de-la-circulation/20191014-112328/description-des-bases-de-donnees-onisr-annees-2005-a-2018.pdf)
 * Fichiers Caractéristiques – Lieux – Véhicules – Usagers
 
+* Reference data.gouv.fr (https://www.data.gouv.fr/datasets/53698f4ca3a729239d2036df/rdf.json)
+* student works from https://medium.com/@neveldo/les-accidents-de-la-circulation-de-2005-%C3%A0-2016-visualis%C3%A9s-avec-r-b3e2f25266d9
+
+# Fichier caracteristiques
 ```
 # extrait de la rubrique CARACTERISTIQUES
 Num_Acc
@@ -66,3 +70,15 @@ Coordonnées géographiques en degrés décimaux : lat : Latitude
 long : Longitude
 ```
 
+# Fichier usagers
+```
+# extrait de la rubrique USAGERS
+```
+# Fichier lieux
+```
+# extrait de la rubrique LIEUX
+```
+# Fichier véhicules
+```
+# extrait de la rubrique VEHICULES
+```

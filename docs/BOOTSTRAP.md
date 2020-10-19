@@ -53,3 +53,8 @@ DATABASE_URI=mongodb://strapi:password@api_mongo:27017
 docker-compose -f docker-compose.dev.yml run --rm --entrypoint /bin/bash api -c "strapi install documentation graphql"
 ```
 
+* install api "usager"
+```
+docker-compose -f docker-compose.dev.yml run --rm --entrypoint /bin/bash api -c "strapi generate:api usager Num_Acc:string senc:string catv:string occutc:string obs:string obsm:string choc:string manv:string num_veh:string"
+```
+Fix "Num_Acc" upper case in models/usage.settings.json

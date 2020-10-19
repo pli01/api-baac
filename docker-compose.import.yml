@@ -12,8 +12,7 @@ services:
       http_proxy: ${http_proxy}
       https_proxy: ${https_proxy}
       no_proxy: ${no_proxy}
-      INPUT_FILE: ${INPUT_FILE}
-      OUTPUT_FILE: ${OUTPUT_FILE}
+      DATA_SETS: "${DATA_SETS}"
     volumes:
       - ./data:/data
-    command: '/bin/bash -c "( cd /data ; npm ci ; npm run convert )"'
+    command: '/bin/bash -xc "( cd /data; npm ci; npm run convert )"'

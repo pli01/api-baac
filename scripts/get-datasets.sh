@@ -1,4 +1,9 @@
 #!/bin/bash
-datasets=https://www.data.gouv.fr/fr/datasets/r/6eee0852-cbd7-447e-bd70-37c433029405
-datafile=caracteristiques-2018.csv
-curl -L -o ${datafile} ${datasets}
+while read datafile datasets ; do
+   curl -L -o ${datafile} ${datasets}
+done <<EOF
+caracteristiques-2018.csv https://static.data.gouv.fr/resources/base-de-donnees-accidents-corporels-de-la-circulation/20191014-111741/caracteristiques-2018.csv
+lieux-2018.csv https://static.data.gouv.fr/resources/base-de-donnees-accidents-corporels-de-la-circulation/20191014-112036/lieux-2018.csv
+usagers-2018.csv https://static.data.gouv.fr/resources/base-de-donnees-accidents-corporels-de-la-circulation/20191014-112100/usagers-2018.csv
+vehicules-2018.csv https://static.data.gouv.fr/resources/base-de-donnees-accidents-corporels-de-la-circulation/20191014-112113/vehicules-2018.csv
+EOF
