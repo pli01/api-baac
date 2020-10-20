@@ -4,7 +4,6 @@ ARG http_proxy
 ARG https_proxy
 ARG no_proxy
 ARG npm_registry
-ARG sass_registry
 
 WORKDIR /srv/app
 
