@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/22/2020 10:28:12 AM"
+    "x-generation-date": "10/22/2020 11:27:06 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -28,7 +28,7 @@
       "description": "Development server"
     },
     {
-      "url": "http://api-baac.herokuapp.com",
+      "url": "https://api-baac.herokuapp.com",
       "description": "Staging server"
     },
     {
