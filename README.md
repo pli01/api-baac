@@ -15,6 +15,11 @@ Cette API est hebergée sur [heroku](heroku.com) et [mongo atlas](https://www.mo
 
 L'API est développée sous licence libre, le code et les évolutions sont disponibles publiquement (https://github.com/pli01/api-baac)
 
+
+![swagger](docs/api-baac-swagger.png)
+
+![data.gouv.fr](docs/api-baac-data-gouv-fr.png)
+
 # Documentation
 * [Data Format](./docs/DATA.md)
 * [Usage](./docs/USAGE.md)
