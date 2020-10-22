@@ -517,13 +517,13 @@
       "Caracteristique": {
         "required": [
           "id",
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "lum": {
@@ -572,16 +572,17 @@
             "type": "string"
           },
           "published_at": {
-            "type": "datetime"
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
       "NewCaracteristique": {
         "required": [
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "lum": {
@@ -630,7 +631,8 @@
             "type": "string"
           },
           "published_at": {
-            "type": "datetime"
+            "type": "string",
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"

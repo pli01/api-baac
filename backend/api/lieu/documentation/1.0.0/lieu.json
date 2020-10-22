@@ -517,13 +517,13 @@
       "Lieu": {
         "required": [
           "id",
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "catr": {
@@ -581,10 +581,10 @@
       },
       "NewLieu": {
         "required": [
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "catr": {

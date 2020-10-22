@@ -21,7 +21,7 @@
       "description": "Development server"
     },
     {
-      "url": "http://api-baac.herokuapp.com",
+      "url": "https://api-baac.herokuapp.com",
       "description": "Staging server"
     },
     {

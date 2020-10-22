@@ -55,6 +55,9 @@ docker-compose -f docker-compose.dev.yml run --rm --entrypoint /bin/bash api -c 
 
 * install api "usager"
 ```
+# Get colums form csv
+head -1 data/usagers-2018.csv  | tr -d '\r' | awk ' BEGIN { RS="," } { print $1":string" } '  |xargs
+# 
 docker-compose -f docker-compose.dev.yml run --rm --entrypoint /bin/bash api -c "strapi generate:api usager Num_Acc:string senc:string catv:string occutc:string obs:string obsm:string choc:string manv:string num_veh:string"
 ```
-Fix "Num_Acc" upper case in models/usage.settings.json
+Fix "num_acc" upper case in models/usage.settings.json
