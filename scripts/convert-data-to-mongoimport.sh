@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 #
 # import json file via mongoimport
 # TODO: replace date
@@ -10,6 +11,7 @@ for f in ${DATA_SETS} ; do
   echo "# $input_file to $output_file"
 
   cat $input_file  | \
-    jq -r '.[]|.  += {"published_at":{"$date":"2020-10-16T17:48:45.248Z"}, "createdAt":{"$date":"2020-10-16T17:48:45.405Z"},"updatedAt":{"$date":"2020-10-16T17:48:45.405Z"},"__v":0 }' \
+    jq -r '.[]|.  += {"published_at":{"$date":"2020-10-16T17:48:45.248Z"}, "createdAt":{"$date":"2020-10-16T17:48:45.405Z"},"updatedAt":{"$date":"2020-10-16T17:48:45.405Z"},"__v":0 }' | \
+    jq -r 'with_entries( .key |= ascii_downcase )' \
       > $output_file
 done
