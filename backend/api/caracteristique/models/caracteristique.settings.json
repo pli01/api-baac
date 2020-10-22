@@ -11,7 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Num_Acc": {
+    "num_acc": {
       "type": "string",
       "required": true,
       "unique": true

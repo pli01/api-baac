@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/20/2020 6:51:08 AM"
+    "x-generation-date": "10/22/2020 10:28:12 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2096,13 +2096,13 @@
       "Caracteristique": {
         "required": [
           "id",
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "lum": {
@@ -2151,16 +2151,17 @@
             "type": "string"
           },
           "published_at": {
-            "type": "datetime"
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
       "NewCaracteristique": {
         "required": [
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "lum": {
@@ -2209,7 +2210,8 @@
             "type": "string"
           },
           "published_at": {
-            "type": "datetime"
+            "type": "string",
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
@@ -2222,13 +2224,13 @@
       "Lieu": {
         "required": [
           "id",
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "catr": {
@@ -2286,10 +2288,10 @@
       },
       "NewLieu": {
         "required": [
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "catr": {
@@ -2354,34 +2356,43 @@
       "Usager": {
         "required": [
           "id",
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
-          "senc": {
+          "place": {
             "type": "string"
           },
-          "catv": {
+          "catu": {
             "type": "string"
           },
-          "occutc": {
+          "grav": {
             "type": "string"
           },
-          "obs": {
+          "sexe": {
             "type": "string"
           },
-          "obsm": {
+          "trajet": {
             "type": "string"
           },
-          "choc": {
+          "secu": {
             "type": "string"
           },
-          "manv": {
+          "locp": {
+            "type": "string"
+          },
+          "actp": {
+            "type": "string"
+          },
+          "etatp": {
+            "type": "string"
+          },
+          "an_nais": {
             "type": "string"
           },
           "num_veh": {
@@ -2391,31 +2402,40 @@
       },
       "NewUsager": {
         "required": [
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
-          "senc": {
+          "place": {
             "type": "string"
           },
-          "catv": {
+          "catu": {
             "type": "string"
           },
-          "occutc": {
+          "grav": {
             "type": "string"
           },
-          "obs": {
+          "sexe": {
             "type": "string"
           },
-          "obsm": {
+          "trajet": {
             "type": "string"
           },
-          "choc": {
+          "secu": {
             "type": "string"
           },
-          "manv": {
+          "locp": {
+            "type": "string"
+          },
+          "actp": {
+            "type": "string"
+          },
+          "etatp": {
+            "type": "string"
+          },
+          "an_nais": {
             "type": "string"
           },
           "num_veh": {
@@ -2432,13 +2452,13 @@
       "Vehicule": {
         "required": [
           "id",
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "senc": {
@@ -2469,10 +2489,10 @@
       },
       "NewVehicule": {
         "required": [
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
           "senc": {

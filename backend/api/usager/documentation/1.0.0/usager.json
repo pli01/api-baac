@@ -517,34 +517,43 @@
       "Usager": {
         "required": [
           "id",
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
-          "senc": {
+          "place": {
             "type": "string"
           },
-          "catv": {
+          "catu": {
             "type": "string"
           },
-          "occutc": {
+          "grav": {
             "type": "string"
           },
-          "obs": {
+          "sexe": {
             "type": "string"
           },
-          "obsm": {
+          "trajet": {
             "type": "string"
           },
-          "choc": {
+          "secu": {
             "type": "string"
           },
-          "manv": {
+          "locp": {
+            "type": "string"
+          },
+          "actp": {
+            "type": "string"
+          },
+          "etatp": {
+            "type": "string"
+          },
+          "an_nais": {
             "type": "string"
           },
           "num_veh": {
@@ -554,31 +563,40 @@
       },
       "NewUsager": {
         "required": [
-          "Num_Acc"
+          "num_acc"
         ],
         "properties": {
-          "Num_Acc": {
+          "num_acc": {
             "type": "string"
           },
-          "senc": {
+          "place": {
             "type": "string"
           },
-          "catv": {
+          "catu": {
             "type": "string"
           },
-          "occutc": {
+          "grav": {
             "type": "string"
           },
-          "obs": {
+          "sexe": {
             "type": "string"
           },
-          "obsm": {
+          "trajet": {
             "type": "string"
           },
-          "choc": {
+          "secu": {
             "type": "string"
           },
-          "manv": {
+          "locp": {
+            "type": "string"
+          },
+          "actp": {
+            "type": "string"
+          },
+          "etatp": {
+            "type": "string"
+          },
+          "an_nais": {
             "type": "string"
           },
           "num_veh": {
