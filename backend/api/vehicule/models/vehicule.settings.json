@@ -13,8 +13,7 @@
   "attributes": {
     "num_acc": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
     "senc": {
       "type": "string"
