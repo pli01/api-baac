@@ -20,6 +20,9 @@ up-dev: check-dc-config-dev
 down-dev: check-dc-config-dev
 	${DC} -f ${DC_DEV} down
 
+npm-install: check-dc-config-dev
+	${DC} -f ${DC_DEV} run --rm --entrypoint /bin/bash api -c "npm install"
+
 check-dc-config-prod:
 	${DC} -f $(DC_PROD) config -q
 build: check-dc-config-prod
